@@ -24,7 +24,6 @@ class _LoginState extends State<Login> {
   Key _formKey = GlobalKey<FormState>();
   bool isLoading = false;
   String username = "", password = "";
-  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
 
   TextEditingController _username = new TextEditingController();
   TextEditingController _password = new TextEditingController();
@@ -164,6 +163,7 @@ class _LoginState extends State<Login> {
     );
   }
 
+  //API
   login(username, password) async {
     username = _username.text;
     password = _password.text;
