@@ -40,7 +40,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
 
     if (username == "" || password == "" || email == "") {
       Fluttertoast.showToast(
-        msg: "Username or password cannot be blank",
+        msg: "Username or password is blank",
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
       );
